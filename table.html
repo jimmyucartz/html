@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      table {
+        border: 0.01cm solid gray;
+        thead,
+        tfoot {
+          background-color: grey;
+        }
+        tbody tr {
+          background-color: rgb(255, 255, 255);
+        }
+        th,
+        td {
+          border: 1px solid;
+          padding: 8px 10px;
+        }
+        tbody > tr:nth-of-type(even) {
+          background-color: rgb(183, 219, 231);
+        }
+        tfoot {
+          text-align: end;
+        }
+      }
+    </style>
+    <title>Table</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Interest</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Chris</th>
+          <td>Cricket</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <th>Evans</th>
+          <td>Football</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <th>Marino</th>
+          <td>BaseBall</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <th>Alfred</th>
+          <td>Soccer</td>
+          <td>24</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
