@@ -5,22 +5,40 @@
       img {
         background-color: rgb(234, 185, 185);
       }
-      div {
-        display: flex;
-        flex-wrap: wrap-reverse;
-
-        justify-content: center;
-      }
     </style>
     <title>Images in HTML</title>
   </head>
   <body>
     <div>
+      <h1>Img Tag</h1>
+      <br />
       <img
         src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
         alt="Google Logo"
         width="400"
         height="100"
+      /><br />
+      <h1>Picture Tag</h1>
+      <picture>
+        <source
+          media="(min-width:1280px)"
+          srcset="https://placehold.co/1280x200"
+        />
+        <source
+          media="(min-width:750px)"
+          srcset="https://placehold.co/750x100"
+        />
+        <img src="https://placehold.co/200x100" alt="Flowers" />
+      </picture>
+      <br />
+      <h1>Image src-set</h1>
+      <img
+        srcset="
+          https://placehold.co/200x410 2x,
+          https://placehold.co/410x410 4x
+        "
+        sizes="70vmin"
+        src="https://placehold.co/150x150"
       />
     </div>
   </body>
